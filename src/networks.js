@@ -1,7 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 exports.bitcoin = {
-  messagePrefix: 'XEP Signed Message:\n',
+  messagePrefix: '\x14XEP Signed Message:\n',
   bech32: 'ep',
   bip32: {
     public: 0x0488b21e,
@@ -12,7 +12,7 @@ exports.bitcoin = {
   wif: 0xa2,
 };
 exports.regtest = {
-  messagePrefix: 'XEP Signed Message:\n',
+  messagePrefix: '\x14XEP Signed Message:\n',
   bech32: 'eprt',
   bip32: {
     public: 0x043587cf,
@@ -23,7 +23,7 @@ exports.regtest = {
   wif: 0xef,
 };
 exports.testnet = {
-  messagePrefix: 'XEP Signed Message:\n',
+  messagePrefix: '\x14XEP Signed Message:\n',
   bech32: 'te',
   bip32: {
     public: 0x043587cf,

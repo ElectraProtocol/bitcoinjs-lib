@@ -15,7 +15,7 @@ interface Bip32 {
 }
 
 export const bitcoin: Network = {
-  messagePrefix: 'XEP Signed Message:\n',
+  messagePrefix: '\x14XEP Signed Message:\n',
   bech32: 'ep',
   bip32: {
     public: 0x0488b21e,
@@ -26,7 +26,7 @@ export const bitcoin: Network = {
   wif: 0xa2,
 };
 export const regtest: Network = {
-  messagePrefix: 'XEP Signed Message:\n',
+  messagePrefix: '\x14XEP Signed Message:\n',
   bech32: 'eprt',
   bip32: {
     public: 0x043587cf,
@@ -37,7 +37,7 @@ export const regtest: Network = {
   wif: 0xef,
 };
 export const testnet: Network = {
-  messagePrefix: 'XEP Signed Message:\n',
+  messagePrefix: '\x14XEP Signed Message:\n',
   bech32: 'te',
   bip32: {
     public: 0x043587cf,
