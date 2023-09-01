@@ -75,7 +75,7 @@ function Signer(obj) {
   );
 }
 exports.Signer = Signer;
-const SATOSHI_MAX = 21 * 1e14;
+const SATOSHI_MAX = 30 * 1e17;
 function Satoshi(value) {
   return exports.typeforce.UInt53(value) && value <= SATOSHI_MAX;
 }
